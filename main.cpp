@@ -7,6 +7,7 @@
 
 using namespace std;
 
+//Random Number Generator
 long double RandomNumber() {
     std::random_device rd; // obtain a random number from hardware
     std::mt19937 eng(rd()); // seed the generator
@@ -15,15 +16,19 @@ long double RandomNumber() {
     return distr(eng);
 }
 
+//Setup dummy data and variables
 std::vector<Playlist> arr = { {"a", {"1", "2", "3", "4"} }, {"b", {"1"} }, {"c", {"1", "2", "3"} }, {"d", {"1", "2"} } };
 std::vector<Song> final_arr;
 
 int main() {
 
+    //Lets get ready to rock and roll
     for (int i = 0; i < arr.size(); ++i) {
         long double song_position;
 
+        //If there is only one song from that artist
         if (arr[i].songs.size() < 2) {
+            //place single song randomly in array
             song_position = RandomNumber();
 
             //Create song
@@ -36,13 +41,18 @@ int main() {
             final_arr.push_back(this_song);
 
         } else {
+            //There are more than one songs from the artist in playlist
+            //space semi randomly based on percentage
+            //Spreading out evenly, and adds a slight random element to spacing
             song_position = RandomNumber() / 100;
             long double spacing = ( 100 / arr[i].songs.size() + RandomNumber() ) / 100;
 
             //Fisher-Yates
             std::vector<string> random_array = rand_array(arr[i].songs);
 
+            //Repeat song in songs
             for (int x = 0; x < arr[i].songs.size(); ++x) {
+                //Set the position of the song and add a little randomness to it
                 song_position = (song_position + spacing);
 
                 //Create song
@@ -57,8 +67,10 @@ int main() {
         }
     }
 
+    //Sort the array based on the position element
     std::sort(final_arr.begin(), final_arr.end(), less_than_key());
 
+    //print it out to console
     for (int y = 0; y < final_arr.size(); ++y) {
         cout << final_arr[y].position << " " << final_arr[y].artist << final_arr[y].title << "\n";
     }
