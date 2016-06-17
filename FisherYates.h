@@ -13,21 +13,19 @@
 
 using namespace std;
 
-static std::vector<string> rand_array(std::vector<string> elements) {
-    std::srand(std::time(nullptr));
+static std::vector<string> RandomizeArray(std::vector<string> elements) {
+    //Loop through elements in array
+    for (size_t i = 0; i != elements.size(); i++) {
 
-    auto currentIndexCounter = elements.size();
+        //Generate Random Index
+        size_t randomIndex = std::rand() % elements.size();
 
-    for (auto iter = elements.rbegin(); iter != elements.rend();
-         iter++, --currentIndexCounter)
-    {
-        int randomIndex = std::rand() % currentIndexCounter;
-
-        if (*iter != elements.at(randomIndex)) {
-            std::swap(elements.at(randomIndex), *iter);
+        //Check to see if the current element does not match the random element
+        if (elements[i] != elements[randomIndex]) {
+            //swap elements
+            std::swap(elements.at(randomIndex), elements[i]);
         }
     }
-
     return elements;
 }
 

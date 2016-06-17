@@ -48,7 +48,7 @@ int main() {
             long double spacing = ( 100 / arr[i].songs.size() + RandomNumber() ) / 100;
 
             //Fisher-Yates
-            std::vector<string> random_array = rand_array(arr[i].songs);
+            std::vector<string> random_array = RandomizeArray(arr[i].songs);
 
             //Repeat song in songs
             for (int x = 0; x < arr[i].songs.size(); ++x) {
