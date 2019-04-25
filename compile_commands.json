@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/Users/danielcherubini/Coding/CPP/Random-Playlist-in-C-",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++     -std=c++11   -o CMakeFiles/rand.dir/main.cpp.o -c /Users/danielcherubini/Coding/CPP/Random-Playlist-in-C-/main.cpp",
+  "file": "/Users/danielcherubini/Coding/CPP/Random-Playlist-in-C-/main.cpp"
+},
+{
+  "directory": "/Users/danielcherubini/Coding/CPP/Random-Playlist-in-C-",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++     -std=c++11   -o CMakeFiles/rand.dir/FisherYates.cpp.o -c /Users/danielcherubini/Coding/CPP/Random-Playlist-in-C-/FisherYates.cpp",
+  "file": "/Users/danielcherubini/Coding/CPP/Random-Playlist-in-C-/FisherYates.cpp"
+},
+{
+  "directory": "/Users/danielcherubini/Coding/CPP/Random-Playlist-in-C-",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++     -std=c++11   -o CMakeFiles/rand.dir/Song.cpp.o -c /Users/danielcherubini/Coding/CPP/Random-Playlist-in-C-/Song.cpp",
+  "file": "/Users/danielcherubini/Coding/CPP/Random-Playlist-in-C-/Song.cpp"
+},
+{
+  "directory": "/Users/danielcherubini/Coding/CPP/Random-Playlist-in-C-",
+  "command": "/Library/Developer/CommandLineTools/usr/bin/c++     -std=c++11   -o CMakeFiles/rand.dir/Playlist.cpp.o -c /Users/danielcherubini/Coding/CPP/Random-Playlist-in-C-/Playlist.cpp",
+  "file": "/Users/danielcherubini/Coding/CPP/Random-Playlist-in-C-/Playlist.cpp"
+}
+]

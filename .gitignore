@@ -1,2 +1,5 @@
-
+.ccls-cache/
 .idea/
+rand
+Makefile
+CMakeFiles/
