@@ -1,5 +1,7 @@
 # Random Playlist in C++
 
+https://labs.spotify.com/2014/02/28/how-to-shuffle-songs/
+
 Basically what this does is shuffle a playlist, or anything like a playlist.
 
 So assuming you have a playlist of music,
